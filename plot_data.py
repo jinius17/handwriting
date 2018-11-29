@@ -9,6 +9,7 @@ from keras.datasets import mnist
 from IPython.display import SVG
 from keras.utils.vis_utils import model_to_dot
 from keras.models import load_model
+os.environ["PATH"] += os.pathsep + 'C:/anaconda3/Lib/site-packages/graphviz-2.38/bin'
 
 
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
